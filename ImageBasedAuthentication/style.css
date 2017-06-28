@@ -1,0 +1,24 @@
+td {
+	text-align: left;
+	vertical-align: top;
+	font-family:Tahoma;
+	font-size:11px;
+	color: #6B70BD;
+}
+
+a {
+	text-decoration: underline;
+	color:#6B70BD;
+}
+
+A:Hover  {
+	color : #9EA3DE;
+	text-decoration : underline;
+}
+
+H3 {
+	color: #3D429E;
+	font-weight: bold;
+	font-size : 20px;
+	font-family:Tahoma;
+}

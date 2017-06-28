@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Your websites title here</title>
+	<link rel=stylesheet type="text/css" href="style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" marginheight="0" marginwidth="0" rightmargin="0" topmargin="0" background="background.jpg" text="#EAF5FF">
+
+    <form id="form2" runat="server">
+    <div>
+
+
+<table width="100%" height="91" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td width="613" height="91"><img src="Assets/2maincolorarea.jpg" width="613" height="91" border="0" alt=""></td>
+		<td width="100%" height="91" background="Assets/2maincolorarea_bg.jpg" style="font-weight:bold; font-family:Berlin Sans FB; font-size:large; color:White;">Image Based 
+            Authentication</td>
+	</tr>
+</table>
+<table width="100%" height="33" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+<!-- IMPORTANT.. edit blankbutton1.jpg or .psd and save as a different
+name to create the FIRST button on this menu.  Then change the src="" below to the new file name.
+The blankbutton.jpg is a different graphic and shouldn't be edited for placement here -->
+<!-- end of first button code -->
+		<td width="368" height="33"><img src="Assets/3buttonarea.jpg" width="427" height="33" border="0" alt=""></td>
+		<td width="100%" height="33" background="Assets/3buttonareabg.jpg">&nbsp;</td>
+	</tr>
+</table>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+
+		<td width="20%">
+<!-- the rest of the menu buttons go below, edit blankbutton.jpg / or .psd and save as a different
+name to create a new button.  Then change the src="" below to the new file name -->
+           <asp:ContentPlaceHolder ID="sideContent" runat="server"></asp:ContentPlaceHolder>
+<!-- end of button menu -->
+<!-- you can add other text/images for the left side menu below this comment but not after the </td> -->
+
+		</td>
+
+	
+	
+		<td width="20">&nbsp;&nbsp;&nbsp;</td>
+
+		<td width="100%">
+
+			<table width="100%" cellpadding="10" cellspacing="0" border="0">
+				<tr valign="top">
+					<td>			
+<!------------------------ Content area, delete anything below this comment and add your content below ---------------------------->
+<asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    
+                        <BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+<!-------------------------- End of content area ----------------------------------------------------->
+
+
+
+					</td>
+					<td>
+					 <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+					</td>
+				</tr>
+			</table>			
+		</td>
+		
+		<td width="20">&nbsp;&nbsp;&nbsp;</td>
+	</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
+
